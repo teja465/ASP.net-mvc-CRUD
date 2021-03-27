@@ -33,7 +33,8 @@ namespace CURD27.Controllers
             }
             return View(emp);
         }
-
+        
+        //Just checking 
         public ActionResult Create(Employee data)
         {
             if (data.Name!=null)
