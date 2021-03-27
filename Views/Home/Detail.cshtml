@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Detail";
+}
+
+
+<br />
+<h1>Employee detail page</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Address</th>
+            <th  scope="col">MobileNo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.Id</td>
+            <td>@Model.Name</td>
+            <td>@Model.Email</td>
+            <td>@Model.Address</td>
+            <td>@Model.MobileNo</td>
+            <td>
+                <a href="/Home/Edit/@Model.Id">Edit</a>
+            </td>
+            <td>
+                <a href="/Home/Delete/@Model.Id">Delete</a>
+            </td>
+        </tr>
+
+        
+    </tbody>
+</table>
+
